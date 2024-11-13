@@ -9,6 +9,7 @@
     --color-background-secondary: #fff;
     --color-background-footer: var(--footer-gradiente);
     --card-border-radius: 8px;
+    --color-light: rgba(132, 139, 200, 0.18);
     --box-shadow: 0 0.5rem 1rem var(--color-light);
     --box-shadow-hover: 0 0rem 1.5rem var(--color-light);
   
