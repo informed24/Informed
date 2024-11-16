@@ -119,3 +119,64 @@ button:hover{
     margin-right: 20px;
     box-shadow: var(--box-shadow-hover);
 }
+
+aside{
+    position: fixed;
+    align-items: center;
+    padding: 30px 3%;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside h2{
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8F8F;
+    margin-bottom: 20px;
+}
+
+aside p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.item p{
+    transition: color 1s ease, font-size 0.2s ease 0s;
+}
+
+.item .icon{
+    color: #222222;
+    font-size: 18px;
+    transition: color 1s ease, font-size 0.2s ease 0s;
+}
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.item:hover .icon{
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.item:hover p{
+    font-size: 20px;
+    color: var(--color-primary);
+}
