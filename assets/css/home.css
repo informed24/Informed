@@ -249,3 +249,33 @@ main{
     padding: 30px 0%;
     margin-top: 150px;
 }
+
+/* Features Services */
+.features{
+    padding: 60px 8%;
+    margin-top: 150px;
+
+    background: var(--color-background-secondary);
+    width: 1400px;
+    height: 600px;
+}
+
+/* Upper */
+.features .upper{
+    
+}
+.features .upper .left{
+
+}
+.features .upper .left h3{
+
+}
+.features .upper .left h2{
+
+}
+.features .upper .right{
+
+}
+.features .upper .right p{
+
+}
