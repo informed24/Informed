@@ -243,3 +243,9 @@ main{
     display: flex;
     padding: 30px;
 }
+
+/* Section Services */
+.services{
+    padding: 30px 0%;
+    margin-top: 150px;
+}
