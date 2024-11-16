@@ -40,3 +40,82 @@
 }
 
 body{ background: var(--color-background); }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 3%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 35px;
+    aspect-ratio: 1;
+    transition: transform 1s ease;
+}
+
+.logo h2{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: letter-spacing 1s ease;
+}
+
+.logo:hover img{
+    transform: scale(0.9);
+}
+.logo:hover h2{
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 80px;
+}
+
+.nav-links li a{
+    color: linear-gradient(180deg, #000000, #666666);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 1s ease, letter-spacing 1s ease;
+}
+
+.nav-links li a:hover{
+    color: var(--color-primary);
+    letter-spacing: 0px;
+}
+
+button{
+    padding: 15px 80px;
+    background: #fafefd;
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border-color: var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+}
+
+button:hover{
+    padding: 15px 50px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
+}
