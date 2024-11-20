@@ -8,6 +8,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/account.css">
     <link rel="stylesheet" href="../assets/css/navbar_footer.css">
     <title>Área do Utente | Informed</title>
 </head>
@@ -85,24 +86,58 @@
 
     <!-- Conteudo Central -->
     <main>
+        <!-- Image --> 
+        <div class="profile-picture">
+            <div class="image">
+                <img src="../assets/images/profilePicture.jpg" alt="Profile Picture">
+            </div>
+            <button class="change-image">Alterar Imagem</button>
+        </div>
+
         <!-- Nome -->
         <div class="form">
             <div class="name">
                 <h3>Nome Completo</h3>
-                <div class="left">
-                    <p>Primeiro Nome</p>
-                    <form>
-                        <input type="text" required>
-                    </form>
+                <h4></h4>
+                <div class="division">
+                    <div class="field">
+                        <p>Primeiro Nome</p>
+                        <form>
+                            <input type="text" placeholder="Info" required>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <p>Sobrenome</p>
+                        <form>
+                            <input type="text" placeholder="Med" required>
+                        </form>
+                    </div>
                 </div>
-                <div class="right">
-                    <p>Sobrenome</p>
-                    <form>
-                        <input type="text" required>
-                    </form>
+                
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="form">
+            <div class="name">
+                <h3>Email</h3>
+                <h4>Utilizaremos este email para lhe enviar notificações sobre consultas, resultados médicos e outras informações relevantes.</h4>
+                <div class="division">
+                    <div class="field">
+                        <p></p>
+                        <form>
+                            <input type="email" placeholder="a0000@alunos.ipb.pt" required>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div class="line"></div>
         </div>
+
+
+        <!-- Email -->
+         
     </main>
 
     <!-- Footer -->
@@ -147,7 +182,5 @@
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
-
 </body>
-
 </html>
