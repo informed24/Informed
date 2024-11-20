@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/consult.css">
+    <link rel="stylesheet" href="../assets/css/navbar_footer.css">
+    <title>Marcação de Consulta | Informed</title>
+</head>
+<body>
+
+    <!-- Navegacao Superior -->
+  <header>
+    <!-- Logo -->
+    <a href="./home.html" class="logo">
+      <img src="../assets/images/logo.png" alt="Logo">
+      <h2>Informed</h2>
+    </a>
+    <!-- Navbar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Unidades</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Saúde e Bem-estar</a></li>
+      </ul>
+    </nav>
+    <!-- Account -->
+    <a href="./account.html" class="account-link">
+      <button>Área do Utente</button>
+    </a>
+  </header>
+
+  <!-- Navegacao Lateral -->
+  <aside>
+    <!-- Upper -->
+    <div class="overview">
+      <h2>Visão Geral</h2>
+      <a href="./consult.html" class="item">
+        <i class="icon fa-solid fa-clipboard-list"></i>
+        <p>Consultas</p>
+      </a>
+      <a href="" class="item">
+        <i class="icon fa-solid fa-phone"></i>
+        <p>Teleconsulta</p>
+      </a>
+      <a href="" class="item">
+        <i class="icon fa-solid fa-syringe"></i>
+        <p>Vacinação</p>
+      </a>
+      <a href="" class="item">
+        <i class="icon fa-solid fa-heart-pulse"></i>
+        <p>Doar Sangue</p>
+      </a>
+      <a href="" class="item">
+        <i class="icon fa-solid fa-stethoscope"></i>
+        <p>Especialidades</p>
+      </a>
+    </div>
+    <!-- Bottom -->
+    <div class="geral">
+      <h2>Geral</h2>
+      <a href="" class="item">
+        <i class="icon fa-regular fa-message"></i>
+        <p>Mensagens</p>
+      </a>
+      <a href="" class="item">
+        <i class="icon fa-solid fa-phone"></i>
+        <p>Especialidades</p>
+      </a>
+    </div>
+  </aside>
+
+    <h1>Marcar uma consulta</h1>    
+    <sup>
+    <h4>Agende a sua consulta de forma rápida e eficiente</h4>
+  </sup>
+<main>
+    <div class="form-container">
+        <form id="consultaForm">
+            <div class="form-group">
+                <label for="tipoConsulta">Tipo de Consulta</label>
+                <h5>Escolha o tipo de consulta que deseja agendar</h5>
+                <select id="tipoConsulta" required>
+                    <option value="">Selecione...</option>
+                    <option value="marcacao">Marcação</option>
+                    <option value="exame">Exame</option>
+                </select>
+            </div>  
+
+            <div class="form-group">
+                <label for="especialidade">Especialidade Médica</label>
+                <h5>Escolha a sua especialidade medica</h5>
+                <select id="especialidade" required>
+                    <option value="">Selecione...</option>
+                    <option value="cirurgia">Cirurgia</option>
+                    <option value="radioterapia">Radioterapia</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="neurologia">Neurologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="medico">Escolha o Médico</label>
+                <h5>Indique o nome do seu médico de referência.</h5>
+                <select id="medico" required>
+                    <option value="">Selecione...</option>
+                    <option value="drCarlos">Dr. Carlos Silva</option>
+                    <option value="draMaria">Dra. Maria Souza</option>
+                    <option value="drJoao">Dr. João Oliveira</option>
+                    <option value="draAna">Dra. Ana Costa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="unidade">Unidade Universitária</label>
+                    <h5>Escolha a sua unidade universitária.</h5>
+                <select id="unidade" required>
+                    <option value="">Selecione...</option>
+                    <option value="clínicaA">Clínica A</option>
+                    <option value="clínicaB">Clínica B</option>
+                    <option value="clínicaC">Clínica C</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dataHora">Data e Hora da Consulta</label>
+                <h5>Escolha a data e o horário que melhor se adequa.</h5>
+                <input type="datetime-local" id="dataHora" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo">Motivo da Consulta</label>
+                <h5>Descreva brevemente o motivo da consulta.</h5>
+                <textarea id="motivo" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+    </div>
+
+            <div class="summary-container" id="summaryContainer">
+                <h2>Resumo da Consulta</h2>
+                <div class="summary-item"><strong>Tipo de Consulta:</strong> <span id="summaryTipoConsulta"></span></div>
+                <div class="summary-item"><strong>Especialidade:</strong> <span id="summaryEspecialidade"></span></div>
+                <div class="summary-item"><strong>Médico:</strong> <span id="summaryMedico"></span></div>
+                <div class="summary-item"><strong>Unidade:</strong> <span id="summaryUnidade"></span></div>
+                <div class="summary-item"><strong>Data e Hora:</strong> <span id="summaryDataHora"></span></div>
+                <div class="summary-item"><strong>Motivo:</strong> <span id="summaryMotivo"></span></div>
+                
+                <div class="btn">
+
+                    <button class="cancel-button" id="cancelButton">Cancelar</button>
+                    <button class="confirm-button" id="confirmButton">Confirmar</button>
+                </div>
+            </div>
+
+</main>
+    
+     <!-- Footer -->
+  <footer>
+    <div class="upper">
+      <div class="left">
+        <a href="./home.html" class="footer-logo">
+          <img src="../assets/images/logo.png" alt="Logo">
+          <h2>Informed</h2>
+        </a>
+        
+        <div class="footer-contact">
+          <a href="mailto:webmaster@example.com" class="item">
+            <i class="icon fa-regular fa-envelope"></i>
+            informed@ipb.pt
+          </a>
+          <a href="tel:+351" class="item">
+            <i class="icon fa-solid fa-phone"></i>
+            +351 910 000 000
+          </a>
+        </div>
+      </div>
+  
+      <div class="right">
+        <a href="#" class="link">
+          Unidades
+        </a>
+        <a href="#" class="link">
+          Serviços
+        </a>
+        <a href="#" class="link">
+          Saúde e Bem-Estar
+        </a>
+        <a href="#" class="link">
+          Contactos
+        </a>
+      </div>
+    </div>
+    
+    <hr>
+    <div class="lower">
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="../assets/js/consultas.js">
+        
+</script>   
+</html>
