@@ -85,6 +85,25 @@ main{
     text-decoration: none;
 }
 
+.hero .appointment {
+    padding: 15px 80px;
+    background: #fafefd;
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border-color: var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+}
+
+.hero .appointment:hover {
+    padding: 15px 50px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
+}
+
 .hero .left .buttons .consult-link,
 .hero .left .buttons .service-link{
     color: var(--color-text-black);
