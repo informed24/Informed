@@ -101,7 +101,69 @@ header{
     letter-spacing: 0px;
 }
 
-.account-link .account{
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 80px;
+}
+
+.nav-links li a{
+    color: linear-gradient(180deg, #000000, #666666);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 1s ease, letter-spacing 1s ease;
+}
+
+.nav-links li a:hover{
+    color: var(--color-primary);
+    letter-spacing: 0px;
+}
+
+/* Estilo do dropdown */
+.nav-links .dropdown {
+    position: relative;
+  }
+  
+  .nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 100%;
+    left: 100px;
+    background-color: var(--color-background);
+    z-index: 1000;
+  }
+  
+  .nav-links .dropdown-menu li {
+    width: 320px;
+    padding: 10px 20px;
+  }
+  
+  .nav-links .dropdown-menu li a {
+    color: var(--color-text-black);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: color 1s ease, font-size 0.2s ease 0s;
+  }
+  
+  .nav-links .dropdown-menu li a:hover {
+    font-size: 15px;
+    color: var(--color-primary);
+  }
+  
+  /* Exibir o dropdown ao passar o mouse */
+  .nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+header .account-link .account{
     padding: 15px 80px;
     background: #fafefd;
     color: var(--color-text-black);
@@ -114,7 +176,7 @@ header{
     transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
 }
 
-.account-link .account:hover{
+header .account-link .account:hover{
     padding: 15px 50px;
     margin-right: 20px;
     box-shadow: var(--box-shadow-hover);

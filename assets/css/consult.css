@@ -43,20 +43,14 @@
 
 /* Estilo do corpo da página */
 body {
-    background-color: var(--color-background-secondary);
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
-    height: 100%;
+    background: var(--color-background);
 }
 
 sup {
-    margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: flex-start; /* Alinha no topo */
-            text-align: center; /* Centraliza o texto dentro do elemento */
-    
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha no topo */
+    text-align: center; /* Centraliza o texto dentro do elemento */
 }
 
 
@@ -64,10 +58,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 30px 20%;
-    
+    padding: 30px 20%; 
 }
-
 
 /* Título */
 h1 {
