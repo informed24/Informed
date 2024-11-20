@@ -31,9 +31,83 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 2;
+    padding: 2;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    
+}
+.container {
+    text-align: center;
+    
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 150px;
+}
+.welcome-text {
+    color: #b36bff;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.description {
+    color: #666666;
+   
+    font-size: 33px;
+    font-weight: 400px;
+    margin: 20px 0;
+    letter-spacing: 1;
+}
+.login-box {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 425px;
+    margin: 0 auto;
+}
+.login-box h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+.login-box p {
+    margin: 0 0 20px;
+    color: #666666;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.login-box input[type="checkbox"] {
+    margin-right: 10px;
+}
+.login-box label {
+    color: #666666;
+}
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b36bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background-color: #a35bff;
 }
   
