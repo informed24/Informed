@@ -207,8 +207,107 @@ main{
 
 /* Contact Services */
 .contact{
+    display: flex;
+    flex-direction: row;
     padding: 30px 0%;
     margin-top: 150px;
+}
+
+.contact .field{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .map {
+    width: 700px;
+    height: 600px;
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.8s ease;
+}
+
+.contact .map:hover {
+    width: 770px;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 120px;
+}
+
+.contact h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    letter-spacing: 1px;
+}
+
+.contact h3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-gradient-dark);
+    width: 500px;
+}
+
+.contact .locations-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+.contact .locations-info h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-black);
+}
+
+.contact .locations-info .icon{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.contact .locations-info img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+    margin-top: 5px;
+}
+
+.contact .locations-info p{
+    position: absolute;
+    padding-inline-start: 40px;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-black);
+}
+
+.contact .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    background: var(--color-white);
+    border: 1px solid var(--color-primary);
+    width: 80%;
+    padding: 15px;
+    border-radius: 24px;
+    margin-top: 110px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: width 1s ease;
+}
+
+.contact .link:hover{
+    width: 70%;
 }
 
 /* FAQ Services */
