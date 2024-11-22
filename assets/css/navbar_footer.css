@@ -35,7 +35,7 @@
     --footer-gradiente: linear-gradient(98deg, var(--color-background-footer-primary), var(--color-background-footer-secondary));
 }
 
-/* Tema escuro */
+/* Dark Theme */
 body.dark-theme {
     --color-background: #1b1b1b;
     --color-background-secondary: #242424;
@@ -52,14 +52,12 @@ body.dark-theme {
     --footer-gradiente: linear-gradient(98deg, var(--color-background-footer-primary), var(--color-background-footer-secondary));
 }
 
-/* Container geral do toggle */
 .theme-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Estilo do switch */
 .toggle-switch {
     position: relative;
     width: 80px;
@@ -71,29 +69,25 @@ body.dark-theme {
     overflow: hidden;
 }
 
-/* Ícones */
 .toggle-switch i {
     position: absolute;
     font-size: 18px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2; /* Ícones sobre a esfera */
+    z-index: 2;
     transition: color 0.3s ease;
 }
 
-/* Ícone da lua (modo escuro) */
 .toggle-switch .fa-moon {
     left: 10px;
-    color: var(--color-dark); /* Cor do ícone no tema claro */
+    color: var(--color-dark);
 }
 
-/* Ícone do sol (modo claro) */
 .toggle-switch .fa-sun {
     right: 10px;
-    color: var(--color-dark); /* Cor do ícone no tema claro */
+    color: var(--color-dark);
 }
 
-/* Bola do switch */
 .toggle-circle {
     position: absolute;
     width: 30px;
@@ -104,40 +98,37 @@ body.dark-theme {
     left: 2px;
     box-shadow: var(--box-shadow);
     transition: transform 0.3s ease, background 0.3s ease;
-    z-index: 1; /* Bola sobre os ícones */
+    z-index: 1;
 }
 
-/* Dark Mode: fundo escuro e ícones brancos */
 body.dark-theme .toggle-switch {
-    background: var(--color-button-background); /* Fundo escuro do switch */
+    background: var(--color-button-background);
 }
 
 body.dark-theme .fa-moon {
-    color: var(--color-dark); /* Ícone branco no modo escuro */
+    color: var(--color-dark);
 }
 
 body.dark-theme .fa-sun {
-    color: var(--color-dark); /* Ícone branco no modo escuro */
+    color: var(--color-dark);
 }
 
 body.dark-theme .toggle-circle {
-    transform: translateX(45px); /* Move a bola para a direita */
-    background: var(--color-switch); /* Bola escura no modo escuro */
+    transform: translateX(45px);
+    background: var(--color-switch);
 }
 
-/* Tema claro: fundo branco visível e ícones pretos */
 body .fa-moon {
-    color: var(--color-dark); /* Ícone preto no modo claro */
+    color: var(--color-dark);
 }
 
 body .fa-sun {
-    color: var(--color-dark); /* Ícone preto no modo claro */
+    color: var(--color-dark);
 }
 
 body .toggle-circle {
-    transform: translateX(0); /* Move a bola para a esquerda no tema claro */
+    transform: translateX(0);
 }
-
 
 *{
     margin: 0;
