@@ -7,6 +7,8 @@
     --color-dark: #242424;
     --color-background: #fff;
     --color-background-secondary: #f4f4f4;
+    --color-button-backgroud: #fafefd;
+    --color-switch: #fff;
     --color-background-footer: var(--footer-gradiente);
     --card-border-radius: 8px;
     --color-light: rgba(132, 139, 200, 0.18);
@@ -30,6 +32,108 @@
     --color-background-footer-secondary: #CCCDD7; 
     --footer-gradiente: linear-gradient(98deg, var(--color-background-footer-primary), var(--color-background-footer-secondary));
 }
+
+/* Tema escuro */
+body.dark-theme {
+    --color-background: #121212;
+    --color-background-secondary: #1e1e1e;
+    --color-dark: #f4f4f4;
+    --color-text: #fff;
+    --color-text-black: #fff;
+    --color-button-backgroud: #222222;
+    --color-switch: #121212;
+
+    --color-background-footer-primary: #222222;
+    --color-background-footer-secondary: #1e1e1e; 
+    --footer-gradiente: linear-gradient(98deg, var(--color-background-footer-primary), var(--color-background-footer-secondary));
+}
+
+/* Container geral do toggle */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do switch */
+.toggle-switch {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: var(--color-background-secondary);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+/* Ícones */
+.toggle-switch i {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ícones sobre a esfera */
+    transition: color 0.3s ease;
+}
+
+/* Ícone da lua (modo escuro) */
+.toggle-switch .fa-moon {
+    left: 10px;
+    color: var(--color-dark); /* Cor do ícone no tema claro */
+}
+
+/* Ícone do sol (modo claro) */
+.toggle-switch .fa-sun {
+    right: 10px;
+    color: var(--color-dark); /* Cor do ícone no tema claro */
+}
+
+/* Bola do switch */
+.toggle-circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--color-switch);
+    border-radius: 50%;
+    top: 5px;
+    left: 2px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 1; /* Bola sobre os ícones */
+}
+
+/* Dark Mode: fundo escuro e ícones brancos */
+body.dark-theme .toggle-switch {
+    background: var(--color-button-background); /* Fundo escuro do switch */
+}
+
+body.dark-theme .fa-moon {
+    color: var(--color-dark); /* Ícone branco no modo escuro */
+}
+
+body.dark-theme .fa-sun {
+    color: var(--color-dark); /* Ícone branco no modo escuro */
+}
+
+body.dark-theme .toggle-circle {
+    transform: translateX(45px); /* Move a bola para a direita */
+    background: var(--color-switch); /* Bola escura no modo escuro */
+}
+
+/* Tema claro: fundo branco visível e ícones pretos */
+body .fa-moon {
+    color: var(--color-dark); /* Ícone preto no modo claro */
+}
+
+body .fa-sun {
+    color: var(--color-dark); /* Ícone preto no modo claro */
+}
+
+body .toggle-circle {
+    transform: translateX(0); /* Move a bola para a esquerda no tema claro */
+}
+
 
 *{
     margin: 0;
@@ -129,7 +233,7 @@ header{
     position: relative;
   }
   
-  .nav-links .dropdown-menu {
+.nav-links .dropdown-menu {
     display: none;
     position: absolute;
     border: none;
@@ -138,34 +242,33 @@ header{
     left: 100px;
     background-color: var(--color-background);
     z-index: 1000;
-  }
+}
   
-  .nav-links .dropdown-menu li {
+.nav-links .dropdown-menu li {
     width: 320px;
     padding: 10px 20px;
-  }
+}
   
-  .nav-links .dropdown-menu li a {
+.nav-links .dropdown-menu li a {
     color: var(--color-text-black);
     font-size: 14px;
     text-decoration: none;
     display: block;
     transition: color 1s ease, font-size 0.2s ease 0s;
-  }
+}
   
-  .nav-links .dropdown-menu li a:hover {
+.nav-links .dropdown-menu li a:hover {
     font-size: 15px;
     color: var(--color-primary);
-  }
+}
   
-  /* Exibir o dropdown ao passar o mouse */
-  .nav-links .dropdown:hover .dropdown-menu {
+.nav-links .dropdown:hover .dropdown-menu {
     display: block;
   }
 
 header .account-link .account{
     padding: 15px 80px;
-    background: #fafefd;
+    background: var(--color-button-backgroud);
     color: var(--color-text-black);
     box-shadow: var(--box-shadow);
     border-color: var(--color-primary);
@@ -222,7 +325,7 @@ aside p{
 }
 
 .item .icon{
-    color: #222222;
+    color: var(--color-dark);
     font-size: 18px;
     transition: color 1s ease, font-size 0.2s ease 0s;
 }
@@ -242,6 +345,8 @@ aside p{
     font-size: 20px;
     color: var(--color-primary);
 }
+  
+
 
 /* Footer */
 footer{

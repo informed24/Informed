@@ -7,6 +7,7 @@
     --color-dark: #242424;
     --color-background: #fff;
     --color-background-secondary: #f4f4f4;
+    --color-background-secondary: #f4f4f4;
     --color-background-footer: var(--footer-gradiente);
     --card-border-radius: 8px;
     --color-light: rgba(132, 139, 200, 0.18);
@@ -87,7 +88,7 @@ main{
 
 .hero .appointment {
     padding: 15px 80px;
-    background: #fafefd;
+    background: var(--color-background-secondary);
     color: var(--color-text-black);
     box-shadow: var(--box-shadow);
     border-color: var(--color-primary);
@@ -293,7 +294,7 @@ main{
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow);
-    background: var(--color-white);
+    background: var(--color-background-secondary);
     border: 1px solid var(--color-primary);
     width: 80%;
     padding: 15px;
