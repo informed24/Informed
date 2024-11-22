@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../assets/css/contact.css">
   <title>Contactos | Informed</title>
 </head>
+
 <body>
   <!-- Navegacao Superior -->
   <header>
@@ -44,7 +45,7 @@
         <i class="fa-regular fa-sun"></i>
         <div class="toggle-circle"></div>
       </div>
-    </div>          
+    </div>
     <!-- Account -->
     <a href="./account.html" class="account-link">
       <button class="account">Área do Utente</button>
@@ -90,8 +91,115 @@
     </div>
   </aside>
 
+  <!-- Main Content -->
   <main>
+    <div class="map">
+      <iframe class="frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.4051504049253!2d-6.767720844124801!3d41.795205467177745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3a4a1ee035460b%3A0x72fde1e40776b97b!2sESTIG!5e0!3m2!1spt-PT!2spt!4v1732230665401!5m2!1spt-PT!2spt"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
+    <div class="information">
+      <h2>Encontre-nos Aqui</h2>
+      <h3>
+        Precisa de nos visitar? <br>
+        Veja a nossa localização no mapa e descubra a forma mais fácil de chegar até ao nosso centro de saúde.
+        Estamos aqui para cuidar de si, sempre que precisar.
+      </h3>
+
+      <div class="content">
+        <div class="field">
+          <div class="sup">
+            <h4>Cidade</h4>
+          </div>
+          <div class="low">
+            <img src="../assets/images/arrow.png" alt="Arrow">
+            <p>Bragança</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="sup">
+            <h4>Rua</h4>
+          </div>
+          <div class="low">
+            <img src="../assets/images/arrow.png" alt="Arrow">
+            <p>Alameda de Santa Apolónia</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="sup">
+            <h4>Codigo-Postal</h4>
+          </div>
+          <div class="low">
+            <img src="../assets/images/arrow.png" alt="Arrow">
+            <p>5300 - 252</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <section class="form">
+      <h2>Se tiver alguma dúvida não hesite em falar connosco</h2>
+      <div class="content">
+        <div class="name">
+          <div class="division">
+            <div class="field">
+              <p>Nome</p>
+              <form>
+                <input type="text" placeholder="Informed" required>
+              </form>
+            </div>
+            <div class="field">
+              <p>Email</p>
+              <form>
+                <input type="email" placeholder="a0000@alunos.ipb.pt" required>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="name">
+          <div class="division">
+            <div class="field">
+              <p>Serviço</p>
+              <form>
+                <input type="text" placeholder="Seleciona um dos serviços" required>
+              </form>
+            </div>
+            <div class="field">
+              <p>Número de Telemóvel</p>
+              <form>
+                <input type="email" placeholder="+351 910 000 000" required>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="name">
+          <div class="division">
+            <div class="field">
+              <p>Mensagem</p>
+              <form>
+                <textarea name="" id=""></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">
+        Enviar
+      </a>
+    </section>
+    
   </main>
 
   <!-- Footer -->
