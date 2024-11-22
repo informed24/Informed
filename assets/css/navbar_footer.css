@@ -9,6 +9,7 @@
     --color-background-secondary: #f4f4f4;
     --color-button-backgroud: #fafefd;
     --color-switch: #fff;
+    --color-card: #fff;
     --color-background-footer: var(--footer-gradiente);
     --card-border-radius: 8px;
     --color-light: rgba(132, 139, 200, 0.18);
@@ -35,13 +36,14 @@
 
 /* Tema escuro */
 body.dark-theme {
-    --color-background: #121212;
-    --color-background-secondary: #1e1e1e;
+    --color-background: #1b1b1b;
+    --color-background-secondary: #242424;
     --color-dark: #f4f4f4;
     --color-text: #fff;
     --color-text-black: #fff;
     --color-button-backgroud: #222222;
     --color-switch: #121212;
+    --color-card: #242424;
 
     --color-background-footer-primary: #222222;
     --color-background-footer-secondary: #1e1e1e; 

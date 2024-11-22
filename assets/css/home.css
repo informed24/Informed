@@ -126,8 +126,127 @@ main{
 
 /* Section Services */
 .services{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
     padding: 30px 0%;
     margin-top: 150px;
+}
+
+.services .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: var(--color-card);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.services .picture img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+.services .information{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.services .information h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: opacity 0.8s ease, transform 2s ease;
+}
+
+.services .information h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    margin-bottom: 80px;
+    width: 800px;
+    transition: opacity 0.8s ease, transform 2s ease;
+}
+
+.services .information p{
+    width: 450px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-text-dark-light);
+    margin-bottom: 70px;
+    transition: opacity 0.8s ease, transform 2s ease;
+}
+
+.services .information .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.services .information .links a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    color: var(--color-text-black);
+    transition: color 1s ease;
+}
+
+.services .information .links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.services .information .links a:hover::after {
+    width: 100%;
+}
+
+.services .information .links a.active {
+    color: var(--color-primary);
+}
+
+.services .information .links a.active::after {
+    width: 40%;
+}
+
+.services .information .btn{
+    padding: 15px 80px;
+    background: var(--color-button-backgroud);
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+}
+.services .information .btn:hover {
+    padding: 15px 50px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
 }
 
 /* Features Services */
