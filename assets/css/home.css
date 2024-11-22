@@ -133,7 +133,6 @@ main{
 .features{
     padding: 80px 8%;
     margin-top: 150px;
-
     background: var(--color-background-secondary);
     width: 1400px;
     height: 600px;
@@ -312,6 +311,94 @@ main{
 
 /* FAQ Services */
 .faq{
-    padding: 30px 0%;
+    padding: 80px 8%;
     margin-top: 150px;
+    background: var(--color-background-secondary);
+    width: 1400px;
+    height: 600px;
+    margin-bottom: 200px;
+}
+
+.faq .division{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.faq .field{
+    width: 48%;
+}
+
+.faq .field h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text-gradient-dark);
+    margin-bottom: 30px;
+}
+
+.faq .field h3{
+    width: 90%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-gradient-dark);
+    margin-bottom: 20px;
+}
+
+.faq .field .question{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq .field .question .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-text-black-light);
+}
+
+.faq .field .question .box .fa{
+    font-size: 20px;
+    color: var(--color-dark);
+}
+
+.faq .field .question h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.faq .field .question .arrow {
+    font-size: 12px;
+}
+
+.faq .answer {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    width: 500px;
+    padding: 10px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: var(--color-background-secondary);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    color: var(--color-text-black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    transition: opacity 1s ease, max-height 1s ease;
+}
+
+
+.faq .answer.open {
+    opacity: 1;
+    max-height: 200px;
 }
