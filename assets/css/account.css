@@ -6,7 +6,8 @@
     --color-black: #000;
     --color-dark: #242424;
     --color-background: #fff;
-    --color-background-secondary: #f4f4f4;
+    --color-border-line: #E2E6EA;
+    --color-button-backgroud: #fafefd;
     --color-background-footer: var(--footer-gradiente);
     --card-border-radius: 8px;
     --color-light: rgba(132, 139, 200, 0.1);
@@ -142,7 +143,8 @@ textarea {
     top: 20px;
     width: 450px;
     height: 50px;
-    border: 1px solid #E2E6EA;
+    border: 1px solid var(--color-border-line);
+    background: var(--color-background);
     box-shadow: var(--box-shadow);
     border-radius: 8px;
     box-sizing: border-box;
@@ -151,8 +153,8 @@ textarea {
 
 .line{
     width: 95%;
-    border: 1px solid #E2E6EA;
-    box-shadow: var(--line-box-shadow);
+    border: 1px solid var(--color-border-line);
+    box-shadow: var(--box-shadow);
     margin-top: 50px;
     margin-bottom: 50px;
 }

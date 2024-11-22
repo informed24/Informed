@@ -8,6 +8,7 @@
     --color-background: #fff;
     --color-background-secondary: #f4f4f4;
     --color-button-backgroud: #fafefd;
+    --color-border-line: #E2E6EA;
     --color-switch: #fff;
     --color-card: #fff;
     --color-background-footer: var(--footer-gradiente);
@@ -44,6 +45,7 @@ body.dark-theme {
     --color-button-backgroud: #222222;
     --color-switch: #121212;
     --color-card: #242424;
+    --color-border-line: #242424;
 
     --color-background-footer-primary: #222222;
     --color-background-footer-secondary: #1e1e1e; 
