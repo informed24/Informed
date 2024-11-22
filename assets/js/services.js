@@ -1,10 +1,8 @@
-// Seleciona os elementos dinâmicos
 const imageElement = document.getElementById('dynamic-image');
 const h2Element = document.getElementById('h2');
 const h3Element = document.getElementById('h3');
 const pElement = document.getElementById('p');
 
-// Dados para os diferentes conteúdos
 const content = {
   unidades: {
     image: '../assets/images/unity.jpg',
@@ -26,42 +24,35 @@ const content = {
   }
 };
 
-// Adiciona evento de clique aos links
 const links = document.querySelectorAll('.links a');
 
 links.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault(); // Evita o comportamento padrão do link
+    e.preventDefault();
     
-    // Atualiza o link ativo
     links.forEach(l => l.classList.remove('active'));
     link.classList.add('active');
 
-    // Identifica o conteúdo alvo
     const target = link.getAttribute('data-target');
     const newContent = content[target];
 
-    // Troca o conteúdo com animação
     if (newContent) {
-      // Adiciona a classe para ocultar antes de trocar
       imageElement.classList.add('hidden');
       h2Element.classList.add('hidden');
       h3Element.classList.add('hidden');
       pElement.classList.add('hidden');
 
       setTimeout(() => {
-        // Atualiza o conteúdo
         imageElement.src = newContent.image;
         h2Element.textContent = newContent.h2;
         h3Element.textContent = newContent.h3;
         pElement.textContent = newContent.p;
 
-        // Remove a classe para mostrar novamente
         imageElement.classList.remove('hidden');
         h2Element.classList.remove('hidden');
         h3Element.classList.remove('hidden');
         pElement.classList.remove('hidden');
-      }, 300); // Tempo para sincronizar com a transição (0.3s)
+      }, 300);
     }
   });
 });
