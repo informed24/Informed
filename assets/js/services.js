@@ -7,23 +7,23 @@ const viewMoreButton = document.getElementById('view-more');
 const content = {
   unidades: {
     image: '../assets/images/unity.jpg',
-    h2: 'Valorize a si mesmo',
-    h3: 'O importante não são anos de idade mas sim de vitalidade',
-    p: 'Dispondo da nossa vida pela vossa a todo o momento, correndo de um lado pro outro pra avivar o sentimento e busca por uma saída.',
+    h2: 'Conheça as Nossas Unidades',
+    h3: 'Onde o conhecimento se encontra com a excelência',
+    p: 'O Politécnico de Bragança oferece uma diversidade de unidades académicas, cada uma especializada em áreas distintas',
     link: '../pages/unitys.html'
   },
   servicos: {
     image: '../assets/images/service.jpg',
     h2: 'Descubra nossos Serviços',
     h3: 'Aqui para cuidar de si com dedicação',
-    p: 'Oferecemos uma ampla gama de serviços para o seu bem-estar e saúde, com a nossa equipa especializada sempre pronta para ajudar.',
+    p: 'Oferecemos uma ampla gama de serviços para o seu bem-estar e saúde, com a nossa equipa especializada sempre pronta para ajudar',
     link: '../pages/services.html'
   },
   saude: {
     image: '../assets/images/health.jpg',
     h2: 'Saúde em Primeiro Lugar',
     h3: 'Cuidar de si é nossa prioridade',
-    p: 'Explore as nossas soluções inovadoras de saúde, desenhadas para garantir o seu bem-estar em todas as etapas da vida.',
+    p: 'Explore várias soluções inovadoras de saúde, desenhadas para garantir o seu bem-estar, conforto e qualidade em todas as etapas da vida',
     link: '../pages/health_wellness.html'
   }
 };
