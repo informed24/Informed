@@ -220,8 +220,8 @@ input[type="tel"] {
 
 textarea {
   max-width: 100%;
-  max-height: 200px;
-  min-height: 50px;
+  max-height: 350px;
+  min-height: 150px;
   width: 950px;
   border: 1px solid var(--color-border-line);
   background: var(--color-background);
