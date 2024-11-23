@@ -1,4 +1,4 @@
-# **Centro de Saúde do IPB - InforMed ** 🏥
+# Centro de Saúde do IPB - InforMed 🏥
 
 Bem-vindo ao projeto **Centro de Saúde do IPB**! Este projeto foi desenvolvido com HTML, CSS e JavaScript para fornecer uma plataforma que facilita a marcação de consultas, comunicação com os médicos e outras funcionalidades importantes para os usuários do Centro de Saúde do Politécnico de Bragança. A plataforma oferece uma interface intuitiva para facilitar o acesso e a gestão de serviços de saúde, como agendamento de consultas, mensagens com médicos, teleconsulta, vacinação, doação de sangue e especialidades médicas.
 
