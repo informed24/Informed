@@ -1,54 +1,50 @@
-# Centro de Saúde do IPB - InforMed 🏥
+# **IPB Health Center - InforMed** 🏥
 
-Bem-vindo ao projeto **Centro de Saúde do IPB**! Este projeto foi desenvolvido com HTML, CSS e JavaScript para fornecer uma plataforma que facilita a marcação de consultas, comunicação com os médicos e outras funcionalidades importantes para os usuários do Centro de Saúde do Politécnico de Bragança. A plataforma oferece uma interface intuitiva para facilitar o acesso e a gestão de serviços de saúde, como agendamento de consultas, mensagens com médicos, teleconsulta, vacinação, doação de sangue e especialidades médicas.
-
----
-
-## **Descrição do Projeto** 🖥️
-
-O **Centro de Saúde do IPB** é uma solução digital que visa melhorar a gestão de serviços de saúde para alunos, professores e funcionários do Politécnico de Bragança. A plataforma oferece funcionalidades como marcação de consultas, envio de mensagens aos médicos, agendamento de teleconsultas, vacinação, doação de sangue e agendamento de consultas em especialidades específicas.
+Welcome to the **IPB Health Center** project! This project was developed with HTML, CSS, and JavaScript to provide a platform that simplifies appointment scheduling, communication with doctors, and other important functionalities for users of the IPB Health Center. The platform offers an intuitive interface to facilitate access to and management of health services, such as appointment scheduling, messaging with doctors, telemedicine, vaccinations, blood donation, and medical specialties.
 
 ---
 
-## **Funcionalidades** ✨
+## **Project Description** 🖥️
 
-### 1. **Visualização de Consultas**
-   Os usuários podem visualizar facilmente suas consultas agendadas, com detalhes como data, hora e nome do médico responsável.
-
-### 2. **Marcar Consulta**
-   A plataforma permite que os usuários marquem consultas com médicos em diferentes especialidades. Eles podem escolher a data e a hora, além de selecionar a especialidade desejada.
-
-### 3. **Mensagem com Doutor**
-   Os usuários podem enviar mensagens diretamente para os médicos, facilitando a comunicação para dúvidas rápidas ou esclarecimentos.
-
-### 4. **Teleconsulta**
-   A funcionalidade de teleconsulta permite que os usuários agendem consultas médicas online, facilitando o acesso a cuidados médicos sem sair de casa.
-
-### 5. **Agendamento de Vacinação**
-   Os usuários podem agendar sua vacinação diretamente na plataforma, com a possibilidade de consultar o calendário de vacinas disponíveis e escolher o horário para a aplicação.
-
-### 6. **Doação de Sangue**
-   A plataforma também oferece informações e a possibilidade de agendar doações de sangue, contribuindo para a saúde da comunidade.
-
-### 7. **Especialidade Específica**
-   Através desta funcionalidade, os usuários podem escolher uma especialidade médica específica, como cardiologia, dermatologia, pediatria, entre outras, para agendar uma consulta com o profissional adequado.
+The **IPB Health Center** is a digital solution designed to improve the management of health services for students, faculty, and staff at the Polytechnic Institute of Bragança. The platform offers features such as appointment scheduling, messaging with doctors, telemedicine appointments, vaccinations, blood donations, and scheduling appointments in specific medical specialties.
 
 ---
 
-## **Tecnologias Utilizadas** 🔧
+## **Features** ✨
 
-- **HTML**: Estrutura do conteúdo.
-- **CSS**: Estilização das páginas.
-- **JavaScript**: Interatividade e validação de formulários.
+### 1. **View Appointments**
+   Users can easily view their scheduled appointments, with details such as date, time, and the doctor's name.
+
+### 2. **Schedule an Appointment**
+   The platform allows users to schedule appointments with doctors in various specialties. They can choose the date and time, as well as the desired specialty.
+
+### 3. **Message with Doctor**
+   Users can send messages directly to doctors, facilitating communication for quick questions or clarifications.
+
+### 4. **Telemedicine**
+   The telemedicine feature allows users to schedule online medical consultations, making healthcare more accessible without leaving home.
+
+### 5. **Vaccination Scheduling**
+   Users can schedule their vaccinations directly through the platform, with the ability to view the available vaccine schedule and select a time for the application.
+
+### 6. **Blood Donation**
+   The platform also provides information and the option to schedule blood donations, contributing to the health of the community.
+
+### 7. **Specific Specialty**
+   Through this feature, users can choose a specific medical specialty, such as cardiology, dermatology, pediatrics, among others, to schedule an appointment with the appropriate professional.
 
 ---
 
-## **Instalação** 🚀
+## **Technologies Used** 🔧
 
-1. **Clone o repositório**:
+- **HTML**: Content structure.
+- **CSS**: Page styling.
+- **JavaScript**: Interactivity and form validation.
+
+---
+
+## **Installation** 🚀
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/david-7279/Informed
-
-
-
-   
