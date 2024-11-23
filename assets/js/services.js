@@ -10,7 +10,7 @@ const content = {
     h2: 'Valorize a si mesmo',
     h3: 'O importante não são anos de idade mas sim de vitalidade',
     p: 'Dispondo da nossa vida pela vossa a todo o momento, correndo de um lado pro outro pra avivar o sentimento e busca por uma saída.',
-    link: '../pages/unidade.html'
+    link: '../pages/unitys.html'
   },
   servicos: {
     image: '../assets/images/service.jpg',
