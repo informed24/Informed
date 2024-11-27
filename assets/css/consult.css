@@ -82,21 +82,23 @@ h5 {
 
 /* Container do formulário */
 .form-container {
-    width: 100%;
-    max-width: 600px;
+
+   width: 1200px;
     margin: 0 auto;
-    background-color: var(--color-white);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--box-shadow);
+  
     padding: 30px;
     box-sizing: border-box;
 }
 
 /* Grupo de formulário */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
+.form-group h5 {
+
+    margin-bottom: 15px;
+}
 /* Rótulos dos campos */
 label {
     font-size: 16px;
@@ -108,13 +110,12 @@ label {
 
 /* Estilos para os campos de entrada e seleção */
 select, input[type="text"], input[type="datetime-local"], textarea {
-    width: 100%;
+    width: 600px;
     padding: 12px;
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
     margin-top: 8px;
-    background-color: var(--color-background-secondary);
     transition: border 0.3s ease;
 }
 
@@ -127,14 +128,18 @@ select:focus, input[type="text"]:focus, input[type="datetime-local"]:focus, text
 /* Área de texto */
 textarea {
     resize: vertical;
-    min-height: 100px;
+    width: 1000px;
+    max-width: 1000px;
+    min-height: 300px;
+    max-height: 700px;
 }
 
 /* Botão de confirmação */
 .confirm {
-    width: 100%;
+    width: 1000px;
     padding: 15px;
     font-size: 18px;
+    margin-top: 5px;
     background-color: var(--color-primary);
     color: var(--color-white);
     border: none;
@@ -144,12 +149,13 @@ textarea {
 }
 
 .confirm:hover {
+
     background-color: #9b4dcc;
 }
 
 /* Resumo da consulta */
 .summary{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -193,6 +199,9 @@ textarea {
 
 .content .division{
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
 }
 
 .content .field{
@@ -214,10 +223,11 @@ textarea {
     border-radius: 8px;
     box-sizing: border-box;
     padding-inline-start: 10px;
+    
 }
 
-.content .line{
-    width: 75%;
+ .line{
+    width: 88%;
     border: 1px solid var(--color-border-line);
     box-shadow: var(--box-shadow);
     margin-top: 50px;
