@@ -15,12 +15,20 @@ document.getElementById('consultaForm').addEventListener('submit', function(even
         return;
     }
 
+    // Separando a data e hora
+    const [data, hora] = dataHora.split('T'); // Divide a string de dataHora em data e hora
+
+    // Formatando a data para o formato DD/MM/YYYY
+    const [ano, mes, dia] = data.split('-'); // Separa ano, mês e dia
+    const dataFormatada = `${dia}/${mes}/${ano}`; // Reorganiza para o formato DD/MM/YYYY
+
     // Preenchendo o resumo com as informações
     document.getElementById('summaryTipoConsulta').textContent = tipoConsulta;
     document.getElementById('summaryEspecialidade').textContent = especialidade;
     document.getElementById('summaryMedico').textContent = medico;
     document.getElementById('summaryUnidade').textContent = unidade;
-    document.getElementById('summaryDataHora').textContent = dataHora;
+    document.getElementById('summaryData').textContent = dataFormatada; // Exibe a data formatada
+    document.getElementById('summaryHora').textContent = hora; // Exibe a hora
     document.getElementById('summaryMotivo').textContent = motivo;
 
     // Exibindo o resumo e ocultando o formulário
