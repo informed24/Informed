@@ -42,6 +42,10 @@ body {
     
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
     text-align: center;
     
 }
@@ -53,16 +57,16 @@ body {
 }
 .welcome-text {
     color: #b36bff;
-    font-size: 36px;
-    font-weight: 700;
-    margin: 20px 0;
+    font-size: 64px;
+    font-weight: 500;
+    margin-top: 80px;
 }
 .description {
     color: #666666;
-   
-    font-size: 33px;
+    width: 600px;
+    font-size: 18px;
     font-weight: 400px;
-    margin: 20px 0;
+    margin-top: 50px;
     letter-spacing: 1;
 }
 .login-box {
@@ -72,6 +76,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 425px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .login-box h2 {
     margin: 0 0 20px;
