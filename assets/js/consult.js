@@ -1,49 +1,40 @@
-document.getElementById('consultaForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Referência ao botão de nova consulta
+const novaConsultaButton = document.getElementById('novaConsultaButton');
+const consultasContainer = document.getElementById('consultasContainer');
 
-    // Obtendo os valores dos campos
-    const tipoConsulta = document.getElementById('tipoConsulta').value;
-    const especialidade = document.getElementById('especialidade').value;
-    const medico = document.getElementById('medico').value;
-    const unidade = document.getElementById('unidade').value;
-    const dataHora = document.getElementById('dataHora').value;
-    const motivo = document.getElementById('motivo').value;
+// Redirecionar para a página de marcação de consultas ao clicar no botão
+novaConsultaButton.addEventListener('click', () => {
+    window.location.href = './consultasmarcar.html';
+});
 
-    // Validando se todos os campos foram preenchidos
-    if (!tipoConsulta || !especialidade || !medico || !unidade || !dataHora || !motivo) {
-        alert('Por favor, preencha todos os campos!');
-        return;
+// Carregar consultas armazenadas no Local Storage
+function carregarConsultas() {
+    const consultas = JSON.parse(localStorage.getItem('consultasMarcadas')) || [];
+
+    if (consultas.length === 0) {
+        // Caso não haja consultas marcadas
+        consultasContainer.innerHTML = `
+            <p>Não há consultas marcadas no momento.</p>
+            <p>Clique no botão abaixo para marcar uma nova consulta.</p>
+        `;
+    } else {
+        // Exibir consultas marcadas
+        consultas.forEach(consulta => {
+            const consultaDiv = document.createElement('div');
+            consultaDiv.classList.add('consulta-item');
+            consultaDiv.innerHTML = `
+                <h3>${consulta.tipoConsulta}</h3>
+                <p><strong>Especialidade:</strong> ${consulta.especialidade}</p>
+                <p><strong>Médico:</strong> ${consulta.medico}</p>
+                <p><strong>Unidade:</strong> ${consulta.unidade}</p>
+                <p><strong>Data:</strong> ${consulta.dataHora.split('T')[0]}</p>
+                <p><strong>Hora:</strong> ${consulta.dataHora.split('T')[1]}</p>
+                <p><strong>Motivo:</strong> ${consulta.motivo}</p>
+            `;
+            consultasContainer.appendChild(consultaDiv);
+        });
     }
+}
 
-    // Separando a data e hora
-    const [data, hora] = dataHora.split('T'); // Divide a string de dataHora em data e hora
-
-    // Formatando a data para o formato DD/MM/YYYY
-    const [ano, mes, dia] = data.split('-'); // Separa ano, mês e dia
-    const dataFormatada = `${dia}/${mes}/${ano}`; // Reorganiza para o formato DD/MM/YYYY
-
-    // Preenchendo o resumo com as informações
-    document.getElementById('summaryTipoConsulta').textContent = tipoConsulta;
-    document.getElementById('summaryEspecialidade').textContent = especialidade;
-    document.getElementById('summaryMedico').textContent = medico;
-    document.getElementById('summaryUnidade').textContent = unidade;
-    document.getElementById('summaryData').textContent = dataFormatada; // Exibe a data formatada
-    document.getElementById('summaryHora').textContent = hora; // Exibe a hora
-    document.getElementById('summaryMotivo').textContent = motivo;
-
-    // Exibindo o resumo e ocultando o formulário
-    document.getElementById('consultaForm').style.display = 'none';
-    document.getElementById('summaryContainer').style.display = 'block';
-});
-
-document.getElementById('cancelButton').addEventListener('click', function() {
-    alert('Consulta cancelada!');
-    // Redirecionando para a página principal
-    window.location.href = window.location.href;
-});
-
-document.getElementById('confirmButton').addEventListener('click', function() {
-    alert('Consulta marcada!');
-    // Redirecionando para a página principal
-    window.location.href = window.location.href;
-});
+// Executar ao carregar a página
+document.addEventListener('DOMContentLoaded', carregarConsultas);
