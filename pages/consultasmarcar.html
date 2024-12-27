@@ -8,6 +8,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="../assets/css/consultasmarcar.css">
   <link rel="stylesheet" href="../assets/css/navbar_footer.css">
   <title>Marcação de Consulta | Informed</title>
@@ -94,7 +95,7 @@
 
   <h1>Marcar uma consulta</h1>
   <sup>
-    <h4>Agende a sua consulta de forma rápida e eficiente</h4>
+    <h4 id="subtituloConsulta"> Agende a sua consulta de forma rápida e eficiente</h4>
   </sup>
   <main>
     <section class="form" id="consultaForm">
@@ -155,12 +156,11 @@
 
           </div>
 
-          <div class="form-group">
             <label for="dataHora">Data e Hora da Consulta</label>
-            <h5>Escolha a data e o horário que melhor se adequa.</h5>
-            <input type="datetime-local" id="dataHora" required>
-          </div>
+            <h5>Escolha a data e hora da sua consulta.</h5>
+          <input type="datetime-local" id="dataHora" name="dataHora" readonly>
           <div class="line"></div>
+
 
           <div class="form-group">
             <label for="motivo">Motivo da Consulta</label>
@@ -320,8 +320,10 @@
     </div>
   </footer>
 
-  <script src="../assets/js/consulasmarcar.js"></script>
+  <script src="../assets/js/consultasmarcar.js"></script>
   <script src="../assets/js/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 </body>
 
 </html>

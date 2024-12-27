@@ -155,7 +155,7 @@ textarea {
 
 /* Resumo da consulta */
 .summary{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -302,32 +302,43 @@ textarea {
 }
 
 /* Botões no resumo */
-button.cancel-button, button.confirm-button {
+button.confirm-button, button.cancel-button {
     width: 48%;
-    padding: 10px ;
+    padding: 15px 80px;
     font-size: 16px;
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+    border-color: var(--color-primary);
+    box-shadow: var(--box-shadow);
+    color: var(--color-text-black);
+    background: var(--color-background-secondary);
+    text-align: center;
+
+  
 }
 
 button.cancel-button {
-    background-color: #e74c3c;
+    background-color: var(--color-white);  /* Fundo branco para o botão de cancelar */
+    color: var(--color-primary);  /* Texto roxo */
     margin-right: 4%;
 }
 
 button.cancel-button:hover {
-    background-color: #c0392b;
+    padding: 15px 50px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
 }
 
 button.confirm-button {
-    background-color: #2ecc71;
+    color: var(--color-black); /* Texto branco */
     margin-left: 4%;
 }
 
 button.confirm-button:hover {
-    background-color: #27ae60;
+    box-shadow: var(--box-shadow-hover);
+    background-color: var(--color-text-title-primary);
 }
 
 .btn{
@@ -335,3 +346,75 @@ button.confirm-button:hover {
     flex-direction: row;
 }
 
+
+
+/* Estilo do campo de entrada */
+input[type="text"] {
+    width: 600px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    padding-right: 45px; /* Aumente o padding para criar mais espaço para o ícone */
+  }
+  
+  /* Estilo do ícone do calendário */
+  .flatpickr-input {
+    background-image: url('https://cdn.jsdelivr.net/npm/flatpickr/dist/icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Ajuste a posição do ícone */
+    padding-right: 45px; /* Certifique-se de que o espaço não seja sobreposto */
+  }
+  
+  /* Estilo do calendário */
+  .flatpickr-calendar {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Foco no campo de entrada */
+  input[type="text"]:focus {
+    border-color: var(--color-primary); /* Cor roxa ao focar no campo */
+    outline: none;
+  }
+
+
+  /* Estilo para o botão na página de confirmação */
+#finalMessage button {
+    width: 35%;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+    border-color: var(--color-primary);
+    box-shadow: var(--box-shadow);
+    color: var(--color-text-black);
+    background: var(--color-background-secondary);
+    text-align: center;
+  }
+  
+  /* Efeito quando o mouse passa por cima do botão */
+  #finalMessage button:hover {
+    padding: 10px 10px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
+  }
+  
+  /* Efeito de foco no botão */
+  #finalMessage button:focus {
+    background-color: var(--color-white);  /* Fundo branco para o botão de cancelar */
+    color: var(--color-primary);  /* Texto roxo */
+    margin-right: 4%;
+  }
+  
+  #finalMessage{
+    font-size: 10px;
+    color: black; /* Garantir que o texto seja visível */
+
+    font-weight: normal !important; /* Remove o negrito */
+}

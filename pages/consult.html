@@ -8,7 +8,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Consultas | Informed</title>
   <link rel="stylesheet" href="../assets/css/navbar_footer.css">
-  <link rel="stylesheet" href="../assets/css/consultasmarcar.css">
+  <link rel="stylesheet" href="../assets/css/consult.css">
 </head>
 
 
@@ -95,14 +95,49 @@
 
 
 
-
-  <main>
-    <h1>Consultas do Usuário</h1>
-    <div id="consultasContainer">
-      <!-- Consultas marcadas serão exibidas aqui -->
+<main>
+  <h1>Consultas do Usuário</h1>
+  <div id="consultasContainer">
+    <div class="consulta-item">
+      <p>Consulta do dia <strong>28/12/2024</strong> na hora <strong>15:40</strong></p>
+      <button class="detalhes-btn">Mais Detalhes</button>
+      <div class="consulta-detalhes" style="display: none;">
+        <h2>Detalhes da Consulta</h2>
+        <p><strong>Data:</strong> 28/12/2024</p>
+        <p><strong>Hora:</strong> 15:40</p>
+        <p><strong>Especialidade:</strong> Cardiologia</p>
+        <p><strong>Médico:</strong> Dra Maria</p>
+        <p><strong>Unidade:</strong> Clínica A</p>
+        <p><strong>Motivo:</strong> sadasdas</p>
+        <button class="voltar-btn">Voltar</button>
+      </div>
     </div>
-    <button id="novaConsultaButton">Marcar Nova Consulta</button>
-  </main>
+  </div>
+
+  <!-- Botão para Confirmar Agendamento -->
+  <div class="confirmar-agendamento">
+    <a href="./consultasmarcar.html">
+      <button class="confirmar-btn">Marcar Consulta</button>
+    </a>
+  </div>
+
+  <!-- Botão para Resetar Consultas -->
+  <div class="reset-agendamento">
+    <button id="resetConsultasBtn" class="reset-btn">Resetar Consultas</button>
+  </div>
+
+  <div class="final-message" id="finalMessage" style="display: none;">
+    <h2 id="statusMessage"></h2>
+    <button onclick="window.location.href='./consultasmarcar.html'" class="return-button">Voltar à Página Principal</button>
+  </div>
+
+
+</main>
+
+
+
+
+
   <script src="../assets/js/consult.js"></script>
 </body>
 </html>

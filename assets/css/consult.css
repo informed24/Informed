@@ -1,87 +1,272 @@
-/* Variáveis globais */
+/* Variáveis para os modos claro e escuro */
 :root {
-    --color-primary: #c458f5;
+    --color-primary: #c458f5;  /* Roxo */
     --color-white: #fff;
     --color-black: #000;
     --color-gray-light: #f4f4f4;
     --color-border: #ddd;
+    --color-dark: #333; /* Cor escura para o texto e fundo */
+    --color-button-hover: #a845cc;
+
+    /* Modo escuro */
+    --color-bg-dark: #121212;  /* Fundo escuro */
+    --color-text-dark: #fff;   /* Texto claro no modo escuro */
+    --color-border-dark: #444; /* Cor de borda no modo escuro */
+    --color-btn-dark-bg: #333; /* Cor de fundo dos botões no modo escuro */
+    --color-btn-dark-text: #fff; /* Cor do texto nos botões no modo escuro */
+    --color-btn-dark-hover: #555; /* Cor de fundo do botão no modo escuro no hover */
 }
 
 /* Estilos gerais */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-gray-light);
+    color: var(--color-black);  /* Texto preto por padrão */
     margin: 0;
     padding: 0;
-    color: var(--color-black);
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    height: 100vh;  /* Garante que a altura do body ocupe toda a tela */
+    text-align: center;  /* Centraliza o texto dentro do body */
 }
 
-header {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Modo escuro */
+body.dark-mode {
+    background-color: var(--color-bg-dark); /* Fundo escuro */
+    color: var(--color-text-dark); /* Texto branco no modo escuro */
 }
 
-header .logo h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Container de consultas */
 #consultasContainer {
     margin: 20px auto;
     max-width: 800px;
 }
 
+/* Item de consulta */
 .consulta-item {
     background: var(--color-white);
     border: 1px solid var(--color-border);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-.consulta-item h3 {
-    margin: 0;
+/* Estilos do botão "Mais Detalhes" */
+.detalhes-btn {
+    background-color: var(--color-white); /* Cor inicial branca */
+    color: var(--color-primary);  /* Texto roxo */
+    padding: 4px 8px;
+    border: 1px solid var(--color-primary);  /* Borda roxa */
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+.detalhes-btn:hover {
+    background-color: var(--color-primary);  /* Fica roxo ao passar o mouse */
+    color: var(--color-white);  /* Texto branco */
+}
+
+/* Detalhes da consulta */
+.consulta-detalhes {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: none;
+}
+
+/* Título dos detalhes */
+.consulta-detalhes h2 {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Parágrafos nos detalhes */
+.consulta-detalhes p {
     font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Destacar labels */
+.consulta-detalhes p strong {
+    font-weight: bold;
     color: var(--color-primary);
 }
 
-.consulta-item p {
-    margin: 5px 0;
-}
-
-#novaConsultaButton {
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Botão de "Voltar" */
+.voltar-btn {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 12px 25px;
+    border: 1px solid var(--color-primary);  /* Borda roxa */
+    border-radius: 30px;
     font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
 }
 
-#novaConsultaButton:hover {
-    background-color: #a845cc;
+.voltar-btn:hover {
+    background-color: var(--color-primary);  /* Fica roxo ao passar o mouse */
+    color: var(--color-white);  /* Texto branco */
 }
+
+/* Estilo do botão "Confirmar Agendamento" */
+.confirmar-agendamento  {
+
+    width: 75%;  /* Faz com que os botões ocupem toda a largura */
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;  /* Alinha os botões no centro */
+    display: flex;  
+
+
+
+
+}
+
+.confirmar-btn {
+    padding: 15px 80px;
+    background: var(--color-background-secondary);
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border-color: var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+
+
+}
+
+.confirmar-btn:hover {
+    padding: 15px 50px;
+    box-shadow: var(--box-shadow-hover);
+
+}
+
+/* Modo escuro geral */
+body.dark-mode {
+    background-color: #121212; /* Fundo escuro */
+    color: #fff; /* Texto claro no modo escuro */
+}
+
+/* Ajuste o container de consultas para modo escuro */
+body.dark-mode #consultasContainer {
+    background-color: #333; /* Fundo escuro para o container */
+    color: #fff; /* Texto claro */
+}
+
+/* Ajuste os itens de consulta para o modo escuro */
+body.dark-mode .consulta-item {
+    background: #444; /* Fundo escuro para cada item de consulta */
+    color: #fff; /* Texto claro */
+    border: 1px solid #555; /* Borda mais escura */
+}
+
+/* Ajuste os botões para o modo escuro com as cores desejadas */
+body.dark-mode .detalhes-btn,
+body.dark-mode .voltar-btn{
+    background-color: var(--color-grey);  /* Cor branca para fundo */
+    color: var(--color-primary);  /* Texto roxo */
+    border: 1px solid var(--color-primary);  /* Borda roxa */
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+body.dark-mode .confirmar-btn {
+    padding: 15px 80px;
+    background: var(--color-background-secondary);
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border-color: var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+}
+
+/* Efeito hover para os botões */
+body.dark-mode .detalhes-btn:hover,
+body.dark-mode .voltar-btn:hover,
+body.dark-mode .confirmar-btn:hover {
+    background-color: var(--color-primary);  /* Fica roxo ao passar o mouse */
+    color: var(--color-white);  /* Texto branco */
+}
+
+/* Detalhes da consulta no modo escuro */
+body.dark-mode .consulta-detalhes {
+    background-color: #333;  /* Fundo escuro */
+    color: var(--color-text-white);  /* Texto claro */
+    border: 1px solid #555;  /* Borda mais escura */
+}
+
+/* Estilo do título "Detalhes da Consulta" */
+body.dark-mode .consulta-detalhes h2 {
+    color: var(--color-primary);  /* Cor roxa para o título */
+}
+
+/* Ajuste do botão "Voltar" no modo escuro */
+body.dark-mode .voltar-btn {
+   background-color: var(--color-grey);  /* Cor branca para fundo */
+    color: var(--color-primary);  /* Texto roxo */
+    border: 1px solid var(--color-primary);  /* Borda roxa */
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+body.dark-mode .voltar-btn:hover {
+    background-color: #555;  /* Cor de fundo mais escura ao passar o mouse */
+    color: var(--color-text-white);  /* Texto claro */
+}
+
+
+.reset-agendamento {
+    display:flex;  /* Alinha os botões em linha */
+    justify-content: right;  /* Espaço entre os botões */
+    width: 72%;  /* Faz com que os botões ocupem toda a largura */
+    text-align: center;
+    align-items: flex-start;
+}
+
+.reset-btn {
+    padding: 15px 80px;
+    background: var(--color-background-secondary);
+    color: var(--color-text-black);
+    box-shadow: var(--box-shadow);
+    border-color: var(--color-primary);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 1s ease, padding 1s ease, margin-right 1s ease;
+}
+
+.reset-btn:hover {
+    padding: 15px 50px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow-hover);
+}
+
