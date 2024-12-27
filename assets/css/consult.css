@@ -20,7 +20,7 @@
 /* Estilos gerais */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-white);
     color: var(--color-black);  /* Texto preto por padrão */
     margin: 0;
     padding: 0;
@@ -139,7 +139,7 @@ body.dark-mode {
 
 .confirmar-btn {
     padding: 15px 80px;
-    background: var(--color-background-secondary);
+    background: var(--color-white);
     color: var(--color-text-black);
     box-shadow: var(--box-shadow);
     border-color: var(--color-primary);
@@ -253,7 +253,7 @@ body.dark-mode .voltar-btn:hover {
 
 .reset-btn {
     padding: 15px 80px;
-    background: var(--color-background-secondary);
+    background: var(--color-white);
     color: var(--color-text-black);
     box-shadow: var(--box-shadow);
     border-color: var(--color-primary);
@@ -270,3 +270,7 @@ body.dark-mode .voltar-btn:hover {
     box-shadow: var(--box-shadow-hover);
 }
 
+
+body.dark-mode .reset-btn  {
+    background-color: #333;
+}
