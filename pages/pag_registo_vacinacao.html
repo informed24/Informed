@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registo de uma Nova Vacinação</title>
+  <link rel="stylesheet" href="../assets/css/pag_registo_vacinacao.css">
+  <link rel="stylesheet" href="RodaPe.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="imagens/logo.png" alt="Logo" class="logo">
+      <h1 class="brand-title">INFORMED</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Unidades</a>
+      <a href="#">Serviços</a>
+      <a href="#">Saúde e Bem-Estar</a>
+    </nav>
+    <div class="user-area">
+      <button class="user-button">Área do Utente</button>
+    </div>
+  </header>
+
+  <!-- Título Principal -->
+  <section class="main-title">
+    <h1>Registo de uma Nova Vacinação</h1>
+  </section>
+
+  <!-- Container de Conteúdo -->
+  <div class="container">
+    <!-- Seção Esquerda: Formulário de Vacinação -->
+    <div class="form-container">
+      <h1 class="form-title">Cadastro de Vacinação</h1>
+      <form class="vaccine-form">
+        
+        <!-- Tipo de Vacina -->
+        <div class="form-fields">
+          <label for="vaccine-type">Tipo de Vacina</label>
+          <select id="vaccine-type">
+            <option value="">Selecione o tipo de vacina</option>
+            <option value="vacina1">Vacina 1</option>
+            <option value="vacina2">Vacina 2</option>
+          </select>
+        </div>
+
+        <!-- Dose -->
+        <div class="form-fields">
+          <label for="dose">Qual a Dose?</label>
+          <input type="text" id="dose" placeholder="Escreva aqui qual a dose">
+        </div>
+
+        <!-- Unidade Universitária -->
+        <div class="form-fields">
+          <label for="escola-type">Unidade Universitária</label>
+          <select id="escola-type">
+            <option value="">Qual a sua escola ?</option>
+            <option value="ESA">ESA</option>
+            <option value="ESE">ESE</option>
+            <option value="ESTIG">ESTIG</option>
+            <option value="ESS">ESS</option>
+          </select>
+        </div>
+
+        <!-- Data e Hora -->
+        <div class="form-fields">
+          <label for="datetime">Data e Hora</label>
+          <div class="date-time-group">
+            <input type="date" id="date">
+            <input type="time" id="time">
+          </div>
+        </div>
+
+        <!-- Doenças Crônicas -->
+        <div class="form-fields">
+          <h7>Doenças Crônicas</h7>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="doencas" value="diabetes"> Diabetes</label>
+            <label><input type="checkbox" name="doencas" value="hipertensao"> Hipertensão</label>
+            <label><input type="checkbox" name="doencas" value="asma"> Asma</label>
+            <label><input type="checkbox" name="doencas" value="doenca-cardiaca"> Doença Cardíaca</label>
+            <label><input type="checkbox" name="doencas" value="outro"> Outro</label>
+            <label><input type="checkbox" name="doencas" value="obesidade"> Obesidade</label>
+            <label><input type="checkbox" name="doencas" value="cancer"> Câncer</label>
+            <label><input type="checkbox" name="doencas" value="epilepsia"> Epilepsia</label>
+            <label><input type="checkbox" name="doencas" value="doenca-respiratoria"> Doença Respiratória</label>
+            <label><input type="checkbox" name="doencas" value="doenca-hepática"> Doença Hepática</label>
+            <label><input type="checkbox" name="doencas" value="artrite"> Artrite</label>
+            <label><input type="checkbox" name="doencas" value="acidente-vascular-cerebral"> Acidente Vascular Cerebral</label>
+          </div>
+        </div>
+
+        <!-- Outras Doenças Crônicas -->
+        <div class="form-fields">
+          <label for="other-diseases">Outras Doenças Crônicas</label>
+          <textarea id="other-diseases" placeholder="Especifique outras doenças crônicas"></textarea>
+        </div>
+
+       
+
+      </form>
+    </div>
+
+    <!-- Seção Direita: Alergias -->
+    <div class="right-section">
+      <div class="alergias">
+        <h3>Alergias</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="alergias" value="penicilina"> Penicilina</label>
+          <label><input type="checkbox" name="alergias" value="ibuprofeno"> Ibuprofeno</label>
+          <label><input type="checkbox" name="alergias" value="aspirina"> Aspirina</label>
+          <label><input type="checkbox" name="alergias" value="latex"> Látex</label>
+          <label><input type="checkbox" name="alergias" value="outro"> Outro</label>
+          <label><input type="checkbox" name="alergias" value="amendoim"> Amendoim</label>
+          <label><input type="checkbox" name="alergias" value="gluten"> Glúten</label>
+          <label><input type="checkbox" name="alergias" value="lactose"> Lactose</label>
+          <label><input type="checkbox" name="alergias" value="frutos-do-mar"> Frutos do Mar</label>
+          <label><input type="checkbox" name="alergias" value="pescado"> Pescado</label>
+          <label><input type="checkbox" name="alergias" value="citrus"> Cítricos</label>
+          <label><input type="checkbox" name="alergias" value="outros-alimentos"> Outros alimentos</label>
+        </div>
+      </div>
+      
+      <div class="form-fields">
+        <label for="other-allergies">Outras Alergias</label>
+        <textarea id="other-allergies" placeholder="Especifique outras alergias"></textarea>
+      </div>
+      <!-- Botões -->
+      <div class="form-fields-right">
+        <button type="submit" class="submit-button">Enviar</button>
+        <button type="reset" class="reset-button">Limpar</button>
+      </div>
+    </div>
+  </div>
+
+ <!-- Footer -->
+ <footer>
+  <div class="upper">
+      <div class="left">
+          <a href="./home.html" class="footer-logo">
+              <img src="imagens/logo.png" alt="Logo">
+              <h2>Informed</h2>
+          </a>
+
+          <div class="footer-contact">
+              <a href="mailto:webmaster@example.com" class="item">
+                  <i class="icon fa-regular fa-envelope"></i>
+                  informed@ipb.pt
+              </a>
+              <a href="tel:+351" class="item">
+                  <i class="icon fa-solid fa-phone"></i>
+                  +351 910 000 000
+              </a>
+          </div>
+      </div>
+
+      <div class="right">
+          <a href="./unitys.html" class="link">
+              Unidades
+          </a>
+          <a href="./services.html" class="link">
+              Serviços
+          </a>
+          <a href="./health_wellness.html" class="link">
+              Saúde e Bem-Estar
+          </a>
+          <a href="./contact.html" class="link">
+              Contactos
+          </a>
+      </div>
+  </div>
+
+  <hr>
+  <div class="lower">
+      <p>Todos os direitos reservados</p>
+  </div>
+</footer>
+
+</body>
+</html>

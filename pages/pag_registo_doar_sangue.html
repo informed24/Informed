@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo de Nova Doação de Sangue</title>
+    <link rel="stylesheet" href="styles5.css">
+    <link rel="stylesheet" href="RodaPe.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>INFORMED</h1>
+            <nav>
+                <a href="#">Unidades</a>
+                <a href="#">Serviços</a>
+                <a href="#">Saúde e Bem-Estar</a>
+                <a href="#">Área do Utente</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Registo de Uma Nova Doação de Sangue</h2>
+            <form>
+                <div class="form-sections">
+                    <!-- Seção Esquerda -->
+                    <div class="left-section">
+                        <label for="doacao">Escolha o que quer doar:</label>
+                        <select id="doacao" name="doacao">
+                            <option value="" disabled selected>Selecione o que quer doar</option>
+                            <option value="sangue">Sangue</option>
+                            <option value="plaquetas">Plaquetas</option>
+                            <option value="plasma">Plasma</option>
+                        </select>
+
+                        <label for="tipo">Escolha o tipo sanguíneo:</label>
+                        <input type="text" id="tipo" name="tipo" placeholder="Escreva aqui o seu tipo sanguíneo">
+
+                        <fieldset>
+                            <legend>Exames:</legend>
+                            <label><input type="checkbox" name="exames" value="marcar"> Marcar a data para fazer exames</label>
+                            <div class="date-time">
+                                <input type="date" name="data-exame">
+                                <input type="time" name="hora-exame">
+                            </div>
+                            <label><input type="checkbox" name="exames" value="feitos"> Tem exame feito</label>
+                            <input type="file" name="exames-feitos">
+                            <textarea name="info-exames" placeholder="Ficheiros carregados aparecem aqui" readonly></textarea>
+                        </fieldset>
+
+                        <label for="data-recolha">Se tem exames feitos, pode escolher a data e a hora da recolha:</label>
+                        <div class="date-time">
+                            <input type="date" id="data-recolha" name="data-recolha">
+                            <input type="time" id="hora-recolha" name="hora-recolha">
+                        </div>
+
+                        <label for="unidade">Unidade universitária:</label>
+                        <select id="unidade" name="unidade">
+                            <option value="" disabled selected>Escolha Superior de Saúde</option>
+                            <option value="unidade1">Unidade 1</option>
+                            <option value="unidade2">Unidade 2</option>
+                            <option value="unidade3">Unidade 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Seção Direita -->
+                    <div class="right-section">
+                        <fieldset>
+                            <legend>Alergias:</legend>
+                            <label><input type="checkbox" name="alergias" value="penicilina"> Penicilina</label>
+                            <label><input type="checkbox" name="alergias" value="amendoim"> Amendoim</label>
+                            <label><input type="checkbox" name="alergias" value="pólen"> Pólen</label>
+                            <label><input type="checkbox" name="alergias" value="latex"> Látex</label>
+                            <label><input type="checkbox" name="alergias" value="outras"> Outras</label>
+                        </fieldset>
+                        <textarea name="outras-alergias" placeholder="Especifique aqui outros tipos de alergias"></textarea>
+
+                        <fieldset>
+                            <legend>Doenças Crônicas:</legend>
+                            <label><input type="checkbox" name="doencas" value="diabetes"> Diabetes</label>
+                            <label><input type="checkbox" name="doencas" value="hipertensao"> Hipertensão</label>
+                            <label><input type="checkbox" name="doencas" value="anemia"> Anemia</label>
+                            <label><input type="checkbox" name="doencas" value="outros"> Outros</label>
+                        </fieldset>
+                        <textarea name="outras-doencas" placeholder="Especifique aqui outras doenças crônicas"></textarea>
+
+                        <label><input type="checkbox" name="info" value="tatuagem"> Tem tatuagem feita que ainda não completou 1 ano?</label>
+                    </div>
+                </div>
+
+                <!-- Botões -->
+                <div class="buttons">
+                    <button type="reset" class="btn-reset">Limpar</button>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+     <!-- Footer -->
+  <footer>
+    <div class="upper">
+        <div class="left">
+            <a href="./home.html" class="footer-logo">
+                <img src="imagens/logo.png" alt="Logo">
+                <h2>Informed</h2>
+            </a>
+  
+            <div class="footer-contact">
+                <a href="mailto:webmaster@example.com" class="item">
+                    <i class="icon fa-regular fa-envelope"></i>
+                    informed@ipb.pt
+                </a>
+                <a href="tel:+351" class="item">
+                    <i class="icon fa-solid fa-phone"></i>
+                    +351 910 000 000
+                </a>
+            </div>
+        </div>
+  
+        <div class="right">
+            <a href="./unitys.html" class="link">
+                Unidades
+            </a>
+            <a href="./services.html" class="link">
+                Serviços
+            </a>
+            <a href="./health_wellness.html" class="link">
+                Saúde e Bem-Estar
+            </a>
+            <a href="./contact.html" class="link">
+                Contactos
+            </a>
+        </div>
+    </div>
+  
+    <hr>
+    <div class="lower">
+        <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>
