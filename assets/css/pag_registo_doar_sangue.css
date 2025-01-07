@@ -1,0 +1,101 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('imagens/doacao_sangue.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(59, 48, 43, 0.9);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(59, 48, 43, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section,
+.right-section {
+    width: 48%;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+textarea[readonly] {
+    background-color: #ddd;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+fieldset label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reset {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #8000ff;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
